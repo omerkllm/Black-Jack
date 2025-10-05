@@ -9,6 +9,7 @@ body{
     background-image: url(images/innerImage.jpg);
     background-size: cover;
 }
+
 h1{
     font-family: Inter;
     font-size: 1em;
@@ -91,8 +92,9 @@ p{
 
 .logo-one{
     display: flex;
+    flex-direction: column;
+    align-items: start;
     margin: auto 4px;
-    gap: 0.3em;
     background-color: white;
     letter-spacing: -0.07em;
 }
@@ -116,4 +118,40 @@ p{
 .card-inner{
     display: flex;
     justify-content: space-around;
+}
+
+.main-screen{
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+}
+
+.box2{
+    width: 300px;
+    height: fit-content;
+
+}
+#score-el{
+    display: flex;
+    justify-content: start;
+    width: 300px;
+    overflow-y: auto;
+    height: 245px;
+  white-space: pre-line;
+  margin-left: 10px;
+}
+
+.stats{
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.sub{
+    color: rgb(0, 0, 0);
+    font-weight: normal;
 }
